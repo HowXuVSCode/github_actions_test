@@ -20,7 +20,8 @@ jobs:
         run: gcc a.c
 
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: docker://antonyurchenko/git-release:latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
-          files: |
-            a.out
+          args: a.out
