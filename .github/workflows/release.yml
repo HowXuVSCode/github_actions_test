@@ -17,7 +17,7 @@ jobs:
         run: sudo apt install -y gcc
 
       - name: Build
-        run: gcc a.c -o ./build/release
+        run: gcc a.c
 
       - name: Release
         uses: docker://antonyurchenko/git-release:v5
