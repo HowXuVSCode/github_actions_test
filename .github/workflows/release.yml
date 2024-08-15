@@ -16,6 +16,9 @@ jobs:
       - name: Install gcc
         run: sudo apt install -y gcc
 
+      - name: Make Build dir
+        run: mkdir build
+
       - name: Build
         run: gcc a.c -o ./build/release
 
