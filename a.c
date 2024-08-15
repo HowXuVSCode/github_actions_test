@@ -5,5 +5,6 @@ int main(){
     printf("BB\n");
     printf("CC\n");
     printf("CC\n");
+    printf("CC\n");
     return 0;
 }
